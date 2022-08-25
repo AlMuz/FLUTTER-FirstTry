@@ -14,12 +14,26 @@ class MyApp extends StatelessWidget {
             title: const Text('Flutter'),
             centerTitle: true,
           ),
-          body: const Center(
-            child: Text('flutter_first_try',
-                style: TextStyle(
-                    fontSize: 20,
-                    color: Colors.blue,
-                    fontFamily: 'Timer New Roman')),
+          body: Container(
+            child: Container(
+              child: Text('Some text'),
+              margin: EdgeInsets.all(20.5),
+            ),
+            // child: Image(image: AssetImage('assets/images/vue.png')
+            //     // image: NetworkImage(
+            //     //     'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png'),
+            //     )
+            //     child: ElevatedButton.icon(
+            //   label: Text('click me'),
+            //   icon: Icon(Icons.ac_unit),
+            //   onPressed: () => {},
+            // )
+            //     child: FlatButton(
+            //   onPressed: () => {print('Clicked')},
+            //   child: Text('1234'),
+            //   color: Colors.deepOrangeAccent,
+            // )
+            // child: Icon(Icons.settings, size: 46, color: Colors.blue),
           ),
           floatingActionButton: FloatingActionButton(
             child: const Text('Click me'),
